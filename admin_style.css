@@ -1,0 +1,105 @@
+
+    /* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f7fa;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        position: relative;
+    }
+
+    /* Header positioning */
+    .header {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 36px;
+        font-weight: bold;
+        color: #4a90e2;
+    }
+
+    /* Admin panel styling */
+    .admin-panel {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px 40px;
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* User management buttons */
+    .admin-panel .user-management .action-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        margin: 5px;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+    .approve { background-color: #4caf50; }
+    .suspend { background-color: #f39c12; }
+    .delete { background-color: #e74c3c; }
+
+    .approve:hover { background-color: #3e8e41; }
+    .suspend:hover { background-color: #d47f04; }
+    .delete:hover { background-color: #c0392b; }
+
+    /* Transaction table styling */
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #4a90e2;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Summary section */
+    .summary {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+        .admin-panel {
+            padding: 20px;
+            width: 90%;
+        }
+
+        .header {
+            font-size: 28px;
+        }
+    }
+	
+
